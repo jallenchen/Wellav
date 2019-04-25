@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="itemCount" format="integer"></attr>
+    <attr name="itemBckgrdSrc" format="reference"></attr>
+    <attr name="itemChkBckgrdSrc" format="reference"></attr>
+    <declare-styleable name="AlbumTab">
+        <attr name="itemCount"></attr>      
+   		<attr name="itemBckgrdSrc"></attr>
+   		<attr name="itemChkBckgrdSrc"></attr>
+    </declare-styleable>	
+    
+    <attr name="item_count" format="integer"></attr>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="item_count" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    
+    <!--  -->
+    
+       <declare-styleable name="roundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+</resources>

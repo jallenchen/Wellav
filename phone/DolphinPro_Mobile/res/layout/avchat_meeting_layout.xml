@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/video_meeting_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calling_layout_video_our"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#efeffe" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/video_volume_layout" >
+
+        <ImageView
+            android:id="@+id/video_volume_control_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/speaker_btn_selector" />
+
+        <ImageView
+            android:id="@+id/video_micr__control_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/micr_btn_selector" />
+    </RelativeLayout>
+
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="450dp"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:background="@null"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/handle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color103_60" >
+
+            <com.wellav.dolphin.mmedia.ui.CircleImageView
+                android:id="@+id/meeting_manage_head_iv"
+                android:layout_width="40.0dp"
+                android:layout_height="40.0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="8.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginTop="8.0dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/meeting_manage_name_tv"
+                style="@style/H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginTop="19.0dp"
+                android:layout_toRightOf="@+id/meeting_manage_head_iv" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/Line5"
+                android:layout_below="@+id/meeting_manage_head_iv"
+                android:layout_marginBottom="8.0dp" />
+
+            <ListView
+                android:id="@+id/meeting_right_mebers_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/meeting_over_btn"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="12.0dp"
+                android:divider="@null"
+                android:dividerHeight="0.0px" >
+            </ListView>
+
+            <Button
+                android:id="@+id/meeting_over_btn"
+                android:layout_width="128dp"
+                android:layout_height="34dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/buttonred_shap"
+                android:text="@string/quit" />
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <RadioButton
+        android:id="@+id/radiobox"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_selector" />
+
+    <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/membericon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/radiobox"
+        android:src="@drawable/ic_defaulthead_home_40dp" />
+
+    <TextView
+        android:id="@+id/membername"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/membericon"
+        android:text="用户AA" />
+
+    <ImageView
+        android:id="@+id/membertype"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_type_phone" />
+
+</RelativeLayout>

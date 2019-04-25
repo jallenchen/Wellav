@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wellav.dolphin.mmedia"
+    android:versionCode="11"
+    android:versionName="V0.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    
+    <!-- 云信权限声明 -->
+    <!-- 访问网络状态-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 控制呼吸灯，振动器等，用于新消息提醒 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 多媒体相关 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!-- 如果需要实时音视频通话模块，下面的权限也是必须的。否则，可以不加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+       <!-- 接收 SDK 消息广播权限 -->
+       <permission
+        android:name="com.wellav.dolphin.mmedia.permission.RECEIVE_MSG"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.wellav.dolphin.mmedia.permission.RECEIVE_MSG"/>
+    
+   <!-- jallen add -->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.wellav.dolphin.application.DolphinApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitle" >
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DeviceListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".AlbumActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".GalleryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".SimpleVideoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".UploadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DelPhotoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".DelVideoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".FavorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/android:Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <!-- jallen add -->
+
+        <activity
+            android:name=".FirstPageFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RingingFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DolphinAddFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DolphinSettingFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MsgFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectCityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginPageFragmentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DialingFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MyInfoFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SecondPswEnterFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SettingsFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InviteDownloadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InfomationFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddingCallingFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AddNewContactFragmentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CallingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".CallingVideoConfActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".MonitorVideoConfActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".CallingMeetingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".WatchFamilyAvtivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="rtc.sdk.impl.SdkService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="rtc.sdk.service" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".RemoteAdvanceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RemoteStandbySettingAcitvity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RemoteNewsSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RemoteContactActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".RemoteSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".AssistanHouseFragmentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SetWatchClockActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity>
+           <activity
+            android:name="com.wellav.dolphin.mmedia.activity.RegisterActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity> 
+         <activity
+            android:name="com.wellav.dolphin.mmedia.activity.CallingGroupChatActivity"
+             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>  
+         <activity
+            android:name="com.wellav.dolphin.mmedia.activity.CallingMeetingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+        </activity>
+           
+           <activity
+            android:name=".StatistcsTimeActivity"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" >
+        </activity> 
+        <activity
+            android:name=".ChooseOneDeviceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchMemberActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>   
+        
+           <activity
+            android:name="com.wellav.dolphin.mmedia.netease.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+           <activity
+               android:name="com.wellav.dolphin.mmedia.netease.WelcomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+               <activity
+            android:name="com.wellav.dolphin.mmedia.netease.avchat.AVChatActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.wellav.dolphin.mmedia.netease.team.SystemMessageFragment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name ="com.iflytek.autoupdate.IFlytekUpdateDialog"/>
+		<service android:name="com.iflytek.autoupdate.IFlytekDownloadService"/>
+        <meta-data   android:name="IFLYTEK_APPKEY" android:value="'5768a085'" />
+        <meta-data   android:name="IFLYTEK_CHANNEL" android:value="" />
+        
+           <!-- APP key, 可以在这里设置，也可以在 SDKOptions 中提供。
+            如果 SDKOptions 中提供了，取 SDKOptions 中的值。 -->
+        <meta-data
+            android:name="com.netease.nim.appKey"
+            android:value="160aa26628d9c5b2927e76c7c6401af9" />
+
+        <!-- 声明云信后台服务，如需保持后台推送，使用独立进程效果会更好。 -->
+        <service 
+            android:name="com.netease.nimlib.service.NimService"
+            android:process=":core"/>
+
+        <service
+            android:name="com.netease.nimlib.service.NimService$Aux"
+            android:process=":core"/>
+
+        <!-- 云信SDK的监视系统启动和网络变化的广播接收器，用户开机自启动以及网络变化时候重新登录，
+            保持和 NimService 同一进程 -->
+        <receiver android:name="com.netease.nimlib.service.NimReceiver"
+            android:process=":core"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 云信进程间通信 Receiver -->
+        <receiver android:name="com.netease.nimlib.service.ResponseReceiver"/>
+
+        <!-- 安卓保活配置 -->
+        <service
+            android:name="com.netease.cosine.core.CosineService"
+            android:process=":cosine">
+        </service>
+
+        <receiver
+            android:name="com.netease.cosine.target.CosineReceiver"
+            android:exported="true"
+            android:process=":cosine">
+        </receiver>
+
+        <meta-data
+            android:name="com.netease.cosine.target"
+            android:value=""/>
+        <meta-data
+            android:name="com.netease.cosine.target.receiver"
+            android:value="com.netease.nimlib.service.NimReceiver"/>
+    </application>
+
+</manifest>

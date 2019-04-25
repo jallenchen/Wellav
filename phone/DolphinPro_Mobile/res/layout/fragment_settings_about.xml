@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/actionbar_custom2" />
+
+        <ImageView
+            android:id="@+id/about_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/actionbar"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/about_logo_100dp" />
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/H14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="海豚1.2.1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/about_check_version "
+                    style="@style/H2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/selector_listitem"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/check_version" />
+
+                <ImageView
+                    android:id="@+id/about_new "
+                    android:layout_width="56dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/about_new" />
+            </RelativeLayout>
+
+            <View style="@style/Line2" />
+
+            <Button
+                android:id="@+id/about_function "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/about_function" />
+
+            <View style="@style/Line2" />
+
+            <Button
+                android:id="@+id/problem_help "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/problem_help" />
+
+            <View style="@style/Line2" />
+
+            <Button
+                android:id="@+id/fast_feedback "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/feedback" />
+
+            <View style="@style/Line2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/counsel"
+                    style="@style/H2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/selector_listitem"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="@string/counsel" />
+
+                <TextView
+                    android:id="@+id/counselnumber"
+                    style="@style/H3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="15dp"
+                    android:text="400-0000-0000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/services_protocol "
+            style="@style/H12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="@string/services_protocol" />
+
+        <TextView
+            style="@style/H11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/protocol_note1" />
+
+        <TextView
+            style="@style/H11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="@string/protocol_note2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="68dp" />
+    </LinearLayout>
+
+</ScrollView>

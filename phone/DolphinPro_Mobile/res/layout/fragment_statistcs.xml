@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+    
+ <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+      
+      <com.wellav.dolphin.mmedia.ui.CircleImageView
+          android:id="@+id/statistcs_home"  
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginLeft="16dp"
+          android:src="@drawable/ic_defaulthead_home_40dp"/>
+      
+      <TextView
+          android:id="@+id/statistcs_title"  
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="用户B的小窝"
+          android:paddingTop="19dp"
+          android:paddingLeft="84dp"
+          style="@style/H2"/>
+      
+      <ImageView
+          android:id="@+id/statistcs_dolphin"  
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingTop="12dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="16dp"
+          android:src="@drawable/ic_type_dolphin"/>
+      
+    </RelativeLayout>
+    
+    <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="200dp">
+      
+        <com.wellav.dolphin.mmedia.ui.StatisticsView 
+            android:id="@+id/statisticsView"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="200dp"/>
+        
+        <TextView
+        android:id="@+id/note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/ac_note2"
+        android:textSize="12sp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/statistcs_round"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/note2"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:background="@drawable/statistics_round" />
+
+    <TextView
+        android:id="@+id/note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/note2"
+        android:layout_alignBottom="@+id/note2"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@+id/statistcs_round"
+        android:text="@string/ac_note1"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/ac_note3"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/statistcs_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/statistcs_rank"
+        style="@style/H2"/>
+    
+    
+    <ListView
+        android:id="@+id/my_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:scrollbars="none">
+    </ListView>
+</LinearLayout>

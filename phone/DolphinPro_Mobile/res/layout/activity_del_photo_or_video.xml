@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color102"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/delPhotoActivity_txtChkedCountId"
+            style="@style/H1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="已选择" />
+
+        <ToggleButton
+            android:id="@+id/delPhotoActivity_ChkId"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/selector_chk" 
+            android:textOff="全选"
+            android:textOn="反选" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+            android:id="@+id/delPhotoActivity_gridId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="120dip"
+            android:numColumns="auto_fit"
+            android:paddingLeft="10dp"
+            android:stretchMode="spacingWidthUniform"
+            android:verticalSpacing="5dp" >
+        </com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView>
+
+        <ProgressBar
+            android:id="@+id/delPhotoActivity_pbId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@anim/running_rotate"
+            android:indeterminateDuration="1000"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2" >
+
+        <com.wellav.dolphin.mmedia.ui.AlertButton
+            android:id="@+id/delPhotoActivity_btnDelId"
+            style="@style/H1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_delete_btn"
+            android:text="删除"
+            android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/delPhotoActivity_btnCancelId"
+            style="@style/H1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_delete_btn"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

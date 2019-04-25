@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+    
+        <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+        
+        <TextView 
+            android:id="@+id/myempty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        
+    <ListView 
+        android:id="@+id/msg_list"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/actionbar"
+	    android:clickable="false"
+		android:listSelector="@android:color/transparent" 
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

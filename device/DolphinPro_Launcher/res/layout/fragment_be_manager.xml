@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color101_80"
+    android:clickable="true" >
+	
+    <com.wellav.dolphin.ui.CircleImageView 
+        android:id="@+id/icon"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        
+        />
+    
+    <ImageView 
+        android:id="@+id/type"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_below="@+id/icon"
+        android:layout_toLeftOf="@+id/name"
+        android:layout_marginTop="24px"
+        android:layout_marginRight="8px"
+        android:src="@drawable/type_phone_white"
+        />
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_marginTop="20px"
+        style="@style/h10"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <TextView 
+        android:id="@+id/control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/h12"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="56px"
+        android:layout_centerHorizontal="true"
+        android:text="@string/bind_request_be_manager"
+        
+        
+        />
+    
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control"
+        android:layout_marginTop="52px"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/refused"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:background="@drawable/buttonred_shap"
+            android:text="@string/bind_refused" />
+
+        <Button
+            android:id="@+id/accept"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:layout_marginLeft="48px"
+            android:layout_toRightOf="@+id/refused"
+            android:background="@drawable/buttonblue_shap"
+            android:text="@string/bind_accept" />
+    </RelativeLayout>
+
+</RelativeLayout>

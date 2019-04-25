@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="1.0dp"
+        android:layout_height="1.0dp" />
+
+    <RelativeLayout
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/master_video_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape" />
+
+                <FrameLayout
+                    android:id="@+id/first_video_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:id="@+id/second_video_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape" />
+
+                <FrameLayout
+                    android:id="@+id/third_video_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_shape" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 可以在这里添加控件 -->
+        <!-- 可以在这里添加控件 -->
+        <!--  -->
+
+        <include
+            android:id="@+id/avchat_record_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            layout="@layout/avchat_record_layout"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/calling_video_hangup"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/hangup_btn_selector"
+            android:onClick="onHangUp" />
+
+        <LinearLayout
+            android:id="@+id/calling_layout_video_function"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/color103_60"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/btn_calling_video_capture"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/printscreen_btn_selector"
+                android:onClick="onCaptureWnd" />
+
+            <ImageButton
+                android:id="@+id/btn_call_record"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/record_btn_selector"
+                android:onClick="onRecordVideo" />
+
+            <ImageButton
+                android:id="@+id/conf_members_add_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/groupchat_btn_selector"
+                android:onClick="onAddMember" />
+
+            <ImageButton
+                android:id="@+id/calling_img_audio_mute"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/micr_btn_selector"
+                android:onClick="onMute" />
+
+            <ImageButton
+                android:id="@+id/calling_video_camera"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/camera_btn_selector"
+                android:onClick="onSwitchCamera" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

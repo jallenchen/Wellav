@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106"
+    android:clickable="true" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <RelativeLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="48dp"
+        android:background="@color/white" >
+
+        <com.wellav.dolphin.mmedia.ui.CircleImageView
+            android:id="@+id/setting_home_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_defaulthead_home_48dp" />
+
+        <TextView
+            android:id="@+id/setting_note_name"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/setting_home_icon"
+            android:text="万少光的小窝" />
+
+        <TextView
+            android:id="@+id/setting_nick_name"
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_note_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/setting_home_icon"
+            android:text="昵称：万少光的小窝" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_type_dolphin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setting_layout"
+        android:layout_marginTop="48dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/itemtxt"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="有人观看通知我" />
+
+        <ToggleButton
+            android:id="@+id/setting_switch"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_switch"
+            android:textOff=""
+            android:textOn="" />
+
+        <View
+            android:id="@+id/view1"
+            style="@style/Line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/itemtxt2"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="有人通话通知我" />
+
+        <ToggleButton
+            android:id="@+id/setting_switch2"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_switch"
+            android:textOff=""
+            android:textOn="" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/Line2"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/itemtxt3"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="Ta看照片通知我" />
+
+        <ToggleButton
+            android:id="@+id/setting_switch3"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view2"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_switch"
+            android:textOff=""
+            android:textOn="" />
+
+        <View
+            android:id="@+id/view3"
+            style="@style/Line2"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="48dp" />
+
+        <TextView
+            android:id="@+id/remotetxt"
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/view3"
+            android:background="@drawable/restsend_selector"
+            android:clickable="true"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:text="@string/remote_setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/powernet"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_below="@+id/setting_center_layout"
+        android:layout_marginTop="48dp"
+        android:background="@color/white" >
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="16dp"
+            android:text="电量" />
+
+        <TextView
+            android:id="@+id/setting_power"
+            style="@style/H10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:paddingRight="16dp"
+            android:text="100%" />
+
+        <View
+            android:id="@+id/view7"
+            style="@style/Line2"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view7"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="16dp"
+            android:text="网络状态" />
+
+        <TextView
+            android:id="@+id/setting_net"
+            style="@style/H10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view7"
+            android:layout_marginTop="15dp"
+            android:paddingRight="16dp"
+            android:text="@string/level0" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar" >
+
+            <Button
+                android:id="@+id/message_notification "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_listitem"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/message_notification" />
+
+            <TextView
+                style="@style/H11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="16dp"
+                android:text="@string/message_tips1" />
+
+            <ToggleButton
+                android:id="@+id/switch_notify"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/selector_switch"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/Line2"
+            android:layout_below="@+id/actionbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar" >
+
+            <Button
+                android:id="@+id/message_voice "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_listitem"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/message_voice" />
+
+            <TextView
+                style="@style/H11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingLeft="16dp"
+                android:text="@string/message_tips2" />
+
+            <ToggleButton
+                android:id="@+id/switch_voice"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/selector_switch"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            style="@style/Line2"
+            android:layout_below="@+id/actionbar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/actionbar" >
+
+            <Button
+                android:id="@+id/ring_tone "
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/warning_tone" />
+
+            <TextView
+                android:id="@+id/notify_name"
+                style="@style/H11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="17dp"
+                android:text="跟随系统" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

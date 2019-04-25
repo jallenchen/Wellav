@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/video_meeting_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginRight="0.5px">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calling_layout_video_our"
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/meeting_member_count"
+            style="@style/h3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="20px"
+            android:background="@color/color101_30"
+            android:text="@string/current_meeting_cnt"
+            android:padding="16px" />
+
+        <ImageView
+            android:id="@+id/video_volume_control_iv"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="32px"
+            android:src="@drawable/speaker_btn_selector" 
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/video_micr__control_iv"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32px"
+            android:layout_marginLeft="16px"
+            android:layout_toRightOf="@+id/video_volume_control_iv"
+            android:src="@drawable/micr_btn_selector" 
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/video_gesture_volume_rl"
+            android:layout_width="240dip"
+            android:layout_height="200dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/video_gesture__volume_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" 
+               tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/video_geture_volume_percentage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video_gesture__volume_iv"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:textColor="#ffececec" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_gesture_bright_rl"
+            android:layout_width="240dip"
+            android:layout_height="200dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/video_gesture__bright_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" 
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/video_geture_bright_percentage_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/video_gesture__bright_iv"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:textColor="#ffececec" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="800px"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/handle"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:src="@drawable/ic_launcher" 
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color101_30" >
+
+            <com.wellav.dolphin.ui.CircleImageView
+                android:id="@+id/meeting_manage_head_iv"
+                android:layout_width="72.0px"
+                android:layout_height="72.0px"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16.0px"
+                android:layout_marginLeft="16.0px"
+                android:layout_marginTop="16.0px"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/meeting_type"
+                android:layout_width="28.0px"
+                android:layout_height="28.0px"
+                android:layout_marginLeft="16.0px"
+                android:layout_marginTop="44.0px"
+                android:layout_toRightOf="@+id/meeting_manage_head_iv"
+                android:src="@drawable/type_dolphin_white" 
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/meeting_manage_name_tv"
+                style="@style/h3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0px"
+                android:layout_marginTop="38.0px"
+                android:layout_toRightOf="@+id/meeting_type" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/Line3"
+                android:layout_below="@+id/meeting_manage_head_iv" />
+
+            <ListView
+                android:id="@+id/meeting_right_mebers_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/meeting_disable_mirc_btn"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="16.0px"
+                android:divider="@null"
+                android:dividerHeight="0.0px" >
+            </ListView>
+
+            <Button
+                android:id="@+id/meeting_disable_mirc_btn"
+                style="@style/h3"
+                android:layout_width="140px"
+                android:layout_height="48px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="32.0px"
+                android:layout_marginLeft="48.0px"
+                android:background="@drawable/buttonred_shap"
+                android:text="@string/disable_mirc" />
+
+            <Button
+                android:id="@+id/meeting_over_btn"
+                style="@style/h3"
+                android:layout_width="120px"
+                android:layout_height="48px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="32.0px"
+                android:layout_marginRight="48.0px"
+                android:background="@drawable/buttonred_shap"
+                android:text="@string/over" />
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

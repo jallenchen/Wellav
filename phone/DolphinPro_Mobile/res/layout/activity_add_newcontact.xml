@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/text_press_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+              android:paddingLeft="16dp"
+            android:src="@drawable/ic_search_grey" />
+
+        <TextView
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/search_icon"
+            android:text="@string/number_type" />
+
+        <View
+            style="@style/Line2"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addlink_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/search_layout"
+         android:background="@drawable/text_press_selector"
+          android:clickable="true"
+        android:paddingTop="8dp" >
+<!--  
+        <ImageView
+            android:id="@+id/addphone_contact"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/text_press_selector"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+              android:clickable="true"
+            android:src="@drawable/ic_phonecontacts_48dp" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="50dp"
+            android:text="@string/addphone_contact" />
+-->
+        <ImageView
+            android:id="@+id/link_device"
+            android:layout_width="64dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80dp"
+           
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            
+            android:src="@drawable/ic_link2_48dp" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/link_device" />
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/newconact_title"
+            style="@style/H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addlink_layout"
+            android:layout_marginLeft="12dp"
+            android:padding="4dp"
+            android:text="@string/new_contacts" />
+     
+</RelativeLayout>

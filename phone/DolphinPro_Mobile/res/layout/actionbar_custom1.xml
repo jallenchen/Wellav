@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp" 
+    android:background="@color/color103">
+    
+
+    
+    
+    <TextView
+        android:id="@+id/actionbar_name"
+        android:layout_width="wrap_content"  
+        android:layout_height="match_parent"  
+        android:layout_marginLeft="18dp"
+        style="@style/H1"
+        android:text="@string/dolphin"
+        android:gravity="center_vertical"/>
+    
+        <ImageView
+        android:id="@+id/actionbar_add"
+        android:layout_width="80dp"
+        android:layout_height="80dp" 
+         android:paddingRight="24dp"
+         android:paddingLeft="24dp"
+         android:paddingTop="8dp"
+         android:paddingBottom="8dp"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/actionbar_more"
+        android:background="@drawable/actionbar_selector"/>
+
+</RelativeLayout>

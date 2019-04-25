@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color101_80"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txtTitleId"
+        style="@style/h12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/isDel"
+        android:layout_marginTop="36px" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitleId"
+        android:layout_marginTop="66px"
+        android:layout_marginBottom="36px"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/cancle_btn"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:gravity="center"
+    		android:layout_marginLeft="36px"
+            android:background="@drawable/buttonred_shap"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:layout_marginLeft="96px"
+    		android:layout_marginRight="36px"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/cancle_btn"
+            android:background="@drawable/buttonblue_shap"
+            android:text="@string/confirm" />
+    </RelativeLayout>
+
+</RelativeLayout>

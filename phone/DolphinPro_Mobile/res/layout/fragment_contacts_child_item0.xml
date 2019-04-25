@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp" >
+    
+    <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/child_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+         android:layout_marginBottom="8dp"
+        />
+    <TextView 
+        android:id="@+id/child_home_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/H2"
+        android:layout_marginLeft="8dp"
+        android:text="myhome"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/child_icon"
+        />
+    
+      <TextView 
+          android:id="@+id/child_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/H11"
+        android:layout_marginRight="8dp"
+        android:text="在线"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/child_eye"
+        android:visibility="gone"
+        />
+      
+        <ImageView 
+        android:id="@+id/child_eye"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_privacy_on"
+        />
+        
+        <View 
+            style="@style/Line7"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

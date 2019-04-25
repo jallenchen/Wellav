@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:clickable="true"
+    android:background="@color/color106">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+   
+
+    <TextView
+        android:id="@+id/choose_admin"
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/actionbar"
+        android:paddingLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="@string/choose_admin" />
+    
+        <TextView
+        android:id="@+id/group_name"
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/choose_admin"
+        android:paddingLeft="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/current_group" />
+        <View 
+            android:id="@+id/view1"
+            style="@style/Line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/group_name"
+            />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:background="@color/white"
+        android:cacheColorHint="#abcdefff"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:dividerHeight="1px"
+        android:divider="@color/color104"/>
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Line1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp" />
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        style="@style/H2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/strut"
+        android:background="@drawable/login_btn_selector"
+        android:gravity="center"
+        android:text="@string/cancel" />
+
+    <Button
+        android:id="@+id/okBtn"
+        style="@style/H2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_alignLeft="@id/strut"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/login_btn_selector"
+        android:gravity="center"
+        android:text="@string/conform" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px" >
+
+        <ImageView
+            android:id="@+id/image_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="177px"
+            android:layout_marginTop="26px"
+            android:src="@drawable/desktop_roll_bolck" />
+
+        <TextView
+            android:id="@+id/txt_date_yearAndMonth_safe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/image_point"
+            android:layout_marginRight="32px"
+            android:layout_marginTop="12px"
+			style="@style/h3" />
+    </RelativeLayout>
+	<!-- 长竖线 -->
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="2px"
+        android:layout_height="132px"
+        android:layout_marginLeft="184px"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_date_monthAndDate_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rl_title"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="12px"
+        android:layout_toRightOf="@+id/v_line"
+		style="@style/h3" />
+
+    <TextView
+        android:id="@+id/txt_information_name_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date_monthAndDate_safe"
+        android:layout_marginBottom="12px"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@+id/v_line"
+		style="@style/h2" />
+    
+    <TextView
+        android:id="@+id/txt_information_content_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date_monthAndDate_safe"
+        android:layout_marginBottom="12px"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@+id/txt_information_name_safe"
+        style="@style/h2"  />
+    
+    <TextView
+        android:id="@+id/text_urgency_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date_monthAndDate_safe"
+        android:layout_marginBottom="12px"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@+id/txt_information_content_safe"
+        style="@style/h2"  />
+    
+     <TextView
+        android:id="@+id/text_wrong_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_date_monthAndDate_safe"
+        android:layout_marginBottom="12px"
+        android:layout_marginTop="16px"
+        android:layout_toRightOf="@+id/text_urgency_safe"
+        style="@style/h2"   />
+
+    <TextView
+        android:id="@+id/txt_yesORno_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_information_content_safe"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="150px"
+        android:layout_marginBottom="16px"
+        style="@style/h3"  />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white"
+        android:layout_below="@+id/txt_information_content_safe"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="6px"
+        android:layout_marginRight="150px"
+        android:layout_toRightOf="@+id/v_line"
+        />
+
+</RelativeLayout>

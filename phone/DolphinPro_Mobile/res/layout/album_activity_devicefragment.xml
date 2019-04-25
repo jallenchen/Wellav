@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wellav.dolphin.mmedia.ui.RefreshListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/albumActivity_deviceFrag_lvId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.wellav.dolphin.mmedia.ui.RefreshListView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+    <EditText
+			android:id="@+id/message_edit"
+			style="@style/TW_TT_EditText.MultiLine"
+			android:layout_height="180dp"
+			android:layout_width="328dp"
+			android:layout_below="@+id/actionbar"
+			android:layout_marginTop="24dp"
+			android:layout_marginLeft="16dp"
+			android:layout_marginRight="16dp"
+			android:minLines="10"
+			android:inputType="none"
+			android:maxLength="90"
+			android:hint="请填写您的反馈内容，我们会尽快处理您的反馈"
+			android:imeOptions="flagNoExtractUi" />
+    
+    <Button
+        android:id="@+id/submit"
+        style="@style/H1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/message_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/submit" />
+
+</RelativeLayout>

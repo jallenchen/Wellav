@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color101" >
+
+  <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/headicon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_defaulthead_home_96dp" />
+
+    <TextView
+        android:id="@+id/ring_name"
+        style="@style/H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="百合花" />
+
+    <TextView
+        android:id="@+id/ring"
+        style="@style/H1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ring_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:text="正在呼叫您。。。" />
+
+    <Button
+        android:id="@+id/hangup"
+        style="@style/H1"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/ring"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/buttonred_shap"
+        android:drawableLeft="@drawable/ic_cam_forbid"
+        android:onClick="onHangUp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="挂断" />
+
+    <RelativeLayout
+        android:id="@+id/accept_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ring"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" >
+
+
+        <Button
+            android:id="@+id/reject"
+            style="@style/H1"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/buttonred_shap"
+            android:drawableLeft="@drawable/ic_cam_forbid"
+            android:onClick="onRefused"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="拒接" />
+
+        <Button
+            android:id="@+id/accept_acc"
+            style="@style/H1"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@+id/reject"
+            android:background="@drawable/buttonblue_shap"
+            android:drawableLeft="@drawable/ic_cam"
+            android:onClick="onAccept"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="接听" />
+    </RelativeLayout>
+
+</RelativeLayout>

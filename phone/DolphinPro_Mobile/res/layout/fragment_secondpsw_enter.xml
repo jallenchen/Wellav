@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"   
+     android:id="@+id/ScrollView" 
+     android:layout_width="match_parent"   
+     android:layout_height="match_parent"
+     android:clickable="true"
+     android:scrollbars="none" >    
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      
+      <com.wellav.dolphin.mmedia.ui.CircleImageView
+          android:id="@+id/sp_home"  
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginLeft="16dp"
+          android:src="@drawable/ic_defaulthead_home_40dp"/>
+      
+      <TextView
+          android:id="@+id/sp_title"  
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="用户B的小窝"
+          android:paddingTop="19dp"
+          android:paddingLeft="84dp"
+          style="@style/H2"/>
+      
+      <ImageView
+          android:id="@+id/sp_type_dolphin"  
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingTop="12dp"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="16dp"
+          android:src="@drawable/ic_type_dolphin"/>
+      
+    </RelativeLayout>
+       
+       <ImageView
+          android:id="@+id/sp_img"  
+          android:layout_width="180dp"
+          android:layout_height="180dp"
+          android:layout_marginTop="12dp"
+          android:layout_gravity="center"/>
+       
+    <TextView
+          android:id="@+id/sp_content"  
+          android:layout_width="296dp"
+          android:layout_height="128dp"
+          android:text="@string/spsw_introduce"
+          android:layout_marginTop="24dp"
+          android:layout_gravity="center"
+          style="@style/H3"/>
+    
+    <TextView
+          android:id="@+id/sp_state"  
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:layout_gravity="center"
+          android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/sp_set"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/secondpswsetting"
+        style="@style/H1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="68dp" />
+</LinearLayout>
+</ScrollView>

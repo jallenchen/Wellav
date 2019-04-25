@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+        <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom1" />
+           <include
+        android:id="@+id/rl_error_item"
+        layout="@layout/chat_neterror_item"
+        android:visibility="gone"
+       />
+
+    <FrameLayout
+        android:id="@+id/mainActivity_contentId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+    <com.wellav.dolphin.mmedia.ui.MyTab
+        android:id="@+id/mainActivity_tabId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/color107">
+    </com.wellav.dolphin.mmedia.ui.MyTab>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/startTime" />
+
+        <TextView
+            android:id="@+id/setActivity_sTimId"
+            style="@style/H20"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="right|center_vertical"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Line2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/endTime" />
+
+        <TextView
+            android:id="@+id/setActivity_eTimId"
+            style="@style/H20"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="right|center_vertical" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        style="@style/Line2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/workDay" />
+
+        <TextView
+            android:id="@+id/setActivity_eWeekdaysId"
+            style="@style/H20"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="right|center_vertical" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Line2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+</LinearLayout>

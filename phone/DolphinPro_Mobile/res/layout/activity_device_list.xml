@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:weightSum="1"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color102"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/devicelistActivity_btnBackwardId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="@color/color101" />
+
+        <TextView
+            style="@style/H1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="选择一个海豚" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/albumActivity_deviceFrag_lvId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:layout_weight="1">
+    </ListView>
+
+</LinearLayout>

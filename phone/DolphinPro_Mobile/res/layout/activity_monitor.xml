@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <!-- 视频通话布局 -->
+
+    <RelativeLayout
+        android:id="@+id/watch_layout_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/watch_layout_video_other"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="#efeffe" >
+        </RelativeLayout>
+           <RelativeLayout
+            android:id="@+id/watch_layout_video_our"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/black" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/watch_to_chat"
+            android:layout_width="160dp"
+            android:layout_height="100.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:onClick="onChange2Call"
+            android:background="@color/color103_60" >
+            
+            <ImageButton 
+                android:id="@+id/tochat"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/chat_btn_selector"
+                 android:onClick="onChange2Call"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/H1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tochat"
+                android:text="点击通话"
+                android:layout_centerHorizontal="true"
+                 android:onClick="onChange2Call"
+                />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_watch_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" >
+
+            <ImageButton
+                android:id="@+id/watch_video_narrow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/narrow_btn_selector"
+                android:onClick="isSmallShow"
+                 />
+
+            <ImageButton
+                android:id="@+id/watch_video_status"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/watch_video_narrow"
+                android:background="@drawable/ic_chat_watchstatus" 
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!-- by cpl -->
+
+
+        <RelativeLayout
+            android:id="@+id/video_dir"
+            android:layout_width="180dip"
+            android:layout_height="56dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="134dp"
+            android:background="@drawable/buttondir_selector"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/video_left"
+                android:layout_width="28dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="84dp"
+                android:background="@drawable/camera_l_btn_selector" />
+
+            <ImageButton
+                android:id="@+id/video_right"
+                android:layout_width="28dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/video_left"
+                android:background="@drawable/camera_r_btn_selector" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--  -->
+
+    <LinearLayout
+        android:id="@+id/watch_layout_video_function"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/color103_60"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btn_calling_video_capture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/printscreen_btn_selector"
+            android:onClick="onCaptureWnd" />
+
+    
+    </LinearLayout>
+
+</RelativeLayout>

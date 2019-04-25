@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+    <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/contact_headicon"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:layout_marginLeft="24dp" 
+        android:layout_centerVertical="true"/>
+        
+       <TextView
+           android:id="@+id/contact_name"
+           style="@style/H19"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="8dp"
+           android:layout_toRightOf="@+id/contact_headicon"
+           android:layout_centerVertical="true" />
+       
+       <ImageView
+         android:id="@+id/contact_choose"
+         android:layout_width="24dp"
+         android:layout_height="24dp" 
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="24dp"
+         android:layout_centerVertical="true"/>
+</RelativeLayout>

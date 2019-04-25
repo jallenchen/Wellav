@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@drawable/bg_remote">
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+<RelativeLayout 
+    android:layout_below="@+id/actionbar"
+    android:id="@+id/volume_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="音量"
+        style="@style/H19"/>  
+        
+    <SeekBar
+        android:id="@+id/seekbar_voice"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_centerVertical="true"
+        android:max="15"
+        android:thumbOffset="5dp"
+        android:background="@drawable/seekbar_bg"
+        android:thumb="@drawable/seekbar_thumb"/>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_below="@+id/volume_layout"
+    android:id="@+id/bright_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="亮度"
+        style="@style/H19"/>   
+        
+    
+    <SeekBar
+        android:id="@+id/seekbar_bright"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_centerVertical="true"
+        android:max="255"
+        android:thumbOffset="5dp"
+        android:background="@drawable/seekbar_bg"
+        android:thumb="@drawable/seekbar_thumb"/>
+</RelativeLayout>
+
+  <RelativeLayout 
+      android:layout_below="@+id/bright_layout"
+      android:id="@+id/wifi_txt_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:visibility="invisible"
+     android:layout_marginTop="60dp" >
+    
+      <TextView
+        android:id="@+id/remote_wifi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="无线网络"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/selector_remote_bt"
+        style="@style/H19"/>
+
+        
+      <TextView
+        android:id="@+id/remote_networkname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_centerVertical="true"
+        style="@style/H16"/> 
+        
+      <View
+        style="@style/Line4"
+        android:layout_marginTop="49dp" />
+        
+      
+  </RelativeLayout>
+  
+      <TextView
+        android:id="@+id/remote_senior"
+        android:layout_below="@+id/wifi_txt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+        android:text="高级选项"
+        android:background="@drawable/selector_remote_bt"
+        style="@style/H19"/>
+         
+      <View
+        android:id="@+id/view3"
+        android:layout_below="@+id/remote_senior"
+        style="@style/Line4"/>
+  
+      <TextView
+        android:id="@+id/remote_about"
+        android:layout_below="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="30dp"
+        android:gravity="center_vertical"
+        android:text="关于海豚"
+        android:background="@drawable/selector_remote_bt"
+        style="@style/H19"/>
+         
+      <View
+           android:layout_below="@+id/remote_about"
+        style="@style/Line4" />
+        
+    <include
+        android:id="@+id/actionbar_bottom"
+        layout="@layout/actioninfo_bottom" />
+ 
+  
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:clickable="true"
+    android:background="@color/color101"
+    android:gravity="center_horizontal">
+    
+    <com.wellav.dolphin.mmedia.ui.CircleImageView
+       android:id="@+id/dial_head"
+      android:layout_width="96dp" 
+      android:layout_height="96dp" 
+      android:layout_marginTop="150dp"
+      android:src="@drawable/ic_defaulthead_home_96dp"  
+        />
+    <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/H1" 
+       android:layout_marginTop="36dp"
+        android:text="@string/calling_msg"
+        
+        />
+     <TextView 
+          android:id="@+id/dial_name"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       style="@style/H1" 
+       android:layout_marginTop="14dp"
+        
+        />
+     
+        
+           <Button
+        android:id="@+id/dial_reject"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/buttonred_shap"
+        android:onClick="onHangUp"
+        android:text="@string/calling_hangup" />
+
+</LinearLayout>

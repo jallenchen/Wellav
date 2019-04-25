@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" 
+    >
+
+         <com.wellav.dolphin.mmedia.ui.CircleImageView 
+            android:id="@+id/headicon"
+            android:layout_width="40.0dp"
+            android:layout_height="40.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2.0dp"
+             android:layout_marginLeft="8dp"
+            tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/headicon"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@style/H16" />
+            
+               <ImageButton
+                android:id="@+id/voice"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/micr_btn_selector"
+                tools:ignore="ContentDescription" />
+
+            <!-- wwyue 让在线显示垂直居中  gravity="center_vertical" -->
+    </RelativeLayout>

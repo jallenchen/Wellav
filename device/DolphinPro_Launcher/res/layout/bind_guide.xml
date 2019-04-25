@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_bind" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:baselineAligned ="false"
+		    android:orientation="horizontal" >
+    
+	        <RelativeLayout
+	            android:id="@+id/bind_firststep"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" >
+	
+	            <TextView
+	                android:id="@+id/bind_guide_firststep_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentTop="true"
+	                android:layout_centerHorizontal="true"
+	        		style="@style/h4"
+	                android:text="@string/first_step" />
+	            
+	            <TextView
+	                android:id="@+id/bind_guide_firststep_scan"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	        		style="@style/h3"
+	        		android:layout_below="@+id/bind_guide_firststep_tv"
+	        		android:layout_marginTop="56px"
+	                android:text="@string/first_step_scan" />
+	
+	            <ImageView
+	                android:id="@+id/bind_guide_quickmark_iv"
+	                android:layout_width="200px"
+	                android:layout_height="200px"
+	                android:layout_centerHorizontal="true"
+	                android:layout_below="@+id/bind_guide_firststep_scan"
+	                android:layout_marginTop="44px"
+	                android:src="@drawable/bind1" />
+	            
+	            <TextView
+	                android:id="@+id/bind_guide_firststep_download"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	        		style="@style/h3"
+	        		android:layout_below="@+id/bind_guide_quickmark_iv"
+	        		android:layout_marginTop="32px"
+	                android:text="@string/first_step_download" />
+	        </RelativeLayout>
+	
+	        
+	        <RelativeLayout
+	            android:id="@+id/bind_secstep"
+	            android:layout_width="0px"
+	            android:layout_height="wrap_content"
+	    		android:layout_weight="1">
+	
+	            <TextView
+	                android:id="@+id/bind_guide_thirdstep_tv"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	                style="@style/h4"
+	                android:text="@string/second_step" />
+	            
+	            <TextView
+	                android:id="@+id/bind_guide_thirdstep_info"
+	                android:layout_width="500px"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_horizontal"
+	                
+	                style="@style/h3"
+	                android:layout_centerHorizontal="true"
+	                android:layout_below="@+id/bind_guide_thirdstep_tv"
+	                android:layout_marginTop="24px"
+	                android:layout_marginRight="48px"
+	                android:text="@string/second_step_info" />
+	
+	            <ImageView
+	                android:layout_width="308px"
+	                android:layout_height="308px"
+	                android:layout_centerHorizontal="true"
+	                android:layout_below="@+id/bind_guide_thirdstep_info"
+	                android:padding="8px"
+	                android:layout_marginTop="16px"
+	                android:src="@drawable/bind2" />
+	        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" 
+        android:layout_marginBottom="32px">
+
+        <TextView
+            android:id="@+id/bind_guide_adminprompt_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/h2"
+            android:text="@string/dolphin_prompt" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

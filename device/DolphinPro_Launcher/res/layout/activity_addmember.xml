@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px" >
+
+        <TextView
+            android:id="@+id/groupchat_contact_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:gravity="center_vertical"
+            style="@style/h2"
+            android:text="@string/choose_contact" />
+        
+        <ListView
+            android:id="@+id/groupchat_request_contact_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/groupchat_contact_prompt"
+            android:layout_marginRight="72px"
+            android:cacheColorHint="#000000"
+            android:divider="@color/color2"
+            android:dividerHeight="1.0px"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="false"
+            android:listSelector="@drawable/selector_row"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/groupchat_request_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="96px"
+            android:gravity="center_vertical"
+            style="@style/h2"
+            android:text="@string/choosed" />
+
+        <ListView
+            android:id="@+id/groupchat_request_prompt_lv"
+            android:layout_width="450px"
+            android:layout_height="match_parent"
+            android:divider="#ffcc00"
+             android:scrollbars="none"
+            android:scrollingCache="false"
+            android:listSelector="@drawable/selector_row"
+            android:layout_below="@+id/groupchat_request_prompt" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="100px"
+        android:layout_marginRight="32px">
+
+        <Button
+            android:id="@+id/groupchat_request_cancel_btn"
+            android:layout_width="120px"
+            android:layout_height="48px"
+            style="@style/h3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buttonred_shap"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/groupchat_request_confirm_btn"
+             android:layout_width="120px"
+            android:layout_height="48px"
+            style="@style/h3"
+            android:background="@drawable/buttonblue_shap"
+            android:layout_above="@+id/groupchat_request_cancel_btn"
+            android:layout_marginBottom="24px"
+            android:layout_alignParentRight="true"
+            android:text="@string/invite" />
+    </RelativeLayout>
+
+</LinearLayout>

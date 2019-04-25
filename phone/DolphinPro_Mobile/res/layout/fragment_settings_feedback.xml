@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+    <EditText
+        android:id="@+id/feedback"
+        android:layout_width="328dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="top"
+        android:hint="您的问题和建议？"
+        android:background="@drawable/shape_feedback"/>
+    
+    <Button
+        android:id="@+id/feedback_submit"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/feedback"  
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/submit" />
+
+</RelativeLayout>

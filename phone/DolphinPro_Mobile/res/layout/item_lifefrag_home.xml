@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/item_lifeFrag_home_ImgId"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@null"
+        android:padding="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_lifeFrag_home_txtId"
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center" />
+
+</LinearLayout>

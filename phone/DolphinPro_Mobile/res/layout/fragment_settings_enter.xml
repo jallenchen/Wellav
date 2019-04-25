@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+    <Button
+        android:id="@+id/message_alert "
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_listitem"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/actionbar"
+        android:text="@string/message_alert"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="28dp"
+        style="@style/H2"/>
+    
+    <Button
+        android:id="@+id/psw_change"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_listitem"
+        android:gravity="left|center_vertical"
+        android:text="@string/pswsetting"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="76dp"
+        style="@style/H2"/>
+    
+    <View
+        style="@style/Line2"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="76dp"/>
+    
+    
+     <Button
+        android:id="@+id/language "
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_listitem"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/actionbar"
+        android:text="@string/language"
+        android:paddingLeft="16dp"
+         android:layout_marginTop="124dp"
+        style="@style/H2"/>
+     
+     <TextView
+        android:id="@+id/language_chose "
+        style="@style/H3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/language "
+        android:layout_alignBottom="@+id/language "
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="中文（简体）" />
+       
+    
+    <View
+        style="@style/Line2"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="124dp"/>
+    
+    <Button
+        android:id="@+id/about "
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_listitem"
+        android:gravity="left|center_vertical"
+        android:text="@string/about"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="200dp"
+        style="@style/H2"/>
+    
+    <Button
+        android:id="@+id/settings_logout"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/buttonred_shap"
+        android:text="@string/log_off" />
+
+    <Button
+        android:id="@+id/settings_quit"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="410dp"
+        android:background="@drawable/buttonred_shap"
+        android:text="@string/quit" />
+    
+
+</RelativeLayout>
+

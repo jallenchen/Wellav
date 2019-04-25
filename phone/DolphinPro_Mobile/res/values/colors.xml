@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color><!-- 白色 -->
+	<color name="black">#000000</color><!--黑色 -->
+	<color name="color1">#6699ff</color>
+	<color name="color1t">#886699ff</color>
+	<color name="color1_60">#996699ff</color>
+	<color name="color2">#f5ca64</color>
+	<color name="color3">#fe5b5b</color>
+	<color name="color4">#c72232</color>
+    <color name="color5">#ffd13332</color>
+    <color name="color5_60">#99d13332</color>
+	<color name="color6">#296df7</color>
+	<color name="color7">#31ae38</color>
+	<color name="color8">#6287a6</color>
+	<color name="color101">#1b1b1b</color>
+	<color name="color102">#353535</color>
+	<color name="color102t">#88353535</color>
+	<color name="color103">#373b3e</color>
+	<color name="color103_60">#99373b3e</color>
+	<color name="color104">#ababab</color>
+	<color name="color104t">#88ababab</color>
+	<color name="color105">#bfbfbf</color>
+	<color name="color106">#ececec</color>
+	<color name="color107">#fcfcfc</color>
+	
+   <color name="error_item_color">#F6EBE6</color>
+   <color name="color_b3b3b3">#b3b3b3</color>
+   <color name="split_line_grey_color_d9d9d9">#D9D9D9</color>
+   <color name="color_black_333333">#333333</color>
+   <color name="color_activity_blue_bg">#389fff</color>
+   <color name="transparent">#00000000</color>
+   <color name="color_blue_0888ff">#0888ff</color>
+   <color name="color_red_f04c62">#f04c62</color>
+   <color name="color_aaaaaa_content_text">#ffaaaaaa</color>
+   <color name="im_list_select_hover">#dbdbdb</color>
+   <color name="color_message_default_bg">#e9ecf0</color>
+</resources>

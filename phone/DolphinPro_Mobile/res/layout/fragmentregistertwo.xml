@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <TextView
+        android:id="@+id/sendNote"
+        style="@style/H3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/send_note" />
+
+    <TextView
+        android:id="@+id/cap_phone"
+        style="@style/H15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cap_phone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/verification_code" />
+
+    <EditText
+        android:id="@+id/cilent_psw"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cap_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/textView1"
+        android:background="@null"
+        android:hint="@string/verification_hint"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/rest_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cap_phone"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/restsend_selector"
+        android:enabled="false"
+        android:text="@string/rest_send"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Line3"
+        android:layout_below="@+id/cilent_psw"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/new_psw_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="28dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/new_psw" />
+
+        <EditText
+            android:id="@+id/cilent_new_psw"
+            style="@style/H3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/textView2"
+            android:background="@null"
+            android:password="true"
+            android:hint="@string/new_psw_hint"
+            android:singleLine="true" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/Line3"
+            android:layout_below="@+id/cilent_new_psw"
+            android:layout_marginTop="8dp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/new_secpsw_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="28dp"
+        android:visibility="gone" >
+    
+    <TextView
+        android:id="@+id/second_psw"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/secondpsw" />
+
+    <EditText
+        android:id="@+id/input_second_psw"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:password="true"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/second_psw"
+        android:background="@null"
+        android:hint="输入二级密码" />
+    
+    <View
+        android:id="@+id/view11"
+        style="@style/Line2"
+        android:layout_below="@+id/second_psw"
+        android:layout_marginTop="8dp" />
+   </RelativeLayout>
+
+    <Button
+        android:id="@+id/nextStep"
+        style="@style/H1"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/next_step" />
+
+</RelativeLayout>

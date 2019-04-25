@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@drawable/bg_remote" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+    <ListView
+        android:id="@+id/my_contacts"
+        android:layout_below="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+  	    android:dividerHeight="0dp">
+    </ListView>
+    
+        <include
+        android:id="@+id/actionbar_bottom"
+        layout="@layout/actioninfo_bottom" />
+</RelativeLayout>

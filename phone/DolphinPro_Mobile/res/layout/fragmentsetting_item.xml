@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setting_center_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    
+    <TextView
+        android:id="@+id/itemtxt"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingTop="15dp"
+        android:text="有人观看通知我" />
+
+    <Switch
+        android:id="@+id/setting_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/swtchtoggle_selector"
+        android:track="@drawable/switchbg_selector" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Line2"
+        android:layout_marginTop="48dp" />
+     <TextView
+        android:id="@+id/itemtxt2"
+        style="@style/H2"
+          android:layout_below="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingTop="15dp"
+        android:text="有人通话通知我" />
+
+    <Switch
+        android:id="@+id/setting_switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="15dp"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/swtchtoggle_selector"
+        android:track="@drawable/switchbg_selector" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/Line2"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="48dp" />
+     <TextView
+        android:id="@+id/itemtxt3"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/view2"
+        android:layout_height="48dp"
+        android:paddingTop="15dp"
+        android:text="Ta看照片通知我" />
+
+    <Switch
+        android:id="@+id/setting_switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view2"
+        android:layout_marginTop="15dp"
+        android:textOff=""
+        android:textOn=""
+        android:thumb="@drawable/swtchtoggle_selector"
+        android:track="@drawable/switchbg_selector" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/Line2"
+         android:layout_below="@+id/view2"
+        android:layout_marginTop="48dp" />
+    
+     <TextView
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/view3"
+        android:text="@string/remote_setting" />
+
+</RelativeLayout>

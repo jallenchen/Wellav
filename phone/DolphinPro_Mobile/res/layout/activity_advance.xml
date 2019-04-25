@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/bg_remote"
+	>
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    <ListView 
+        android:layout_below="@+id/actionbar"
+        android:id="@+id/list_advance"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@null"
+		android:dividerHeight="0dp"
+		android:scrollbars="none"/> 
+		
+      <include
+        android:id="@+id/actionbar_bottom"
+        layout="@layout/actioninfo_bottom" />
+</RelativeLayout>
+    
+

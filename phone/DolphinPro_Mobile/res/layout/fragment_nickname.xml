@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white" >
+    
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/new_nickname"
+        style="@style/H3"/>
+    
+    <EditText
+        android:id="@+id/new_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:maxLength="6"
+        android:layout_marginRight="16dp"/>
+    
+   <View
+        style="@style/Line3"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

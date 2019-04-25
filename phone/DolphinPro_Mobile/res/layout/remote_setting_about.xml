@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_remote"
+    android:focusable="true" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <RelativeLayout
+        android:id="@+id/soft_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar" >
+
+        <TextView
+            style="@style/H19"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_remote_bt"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="软件版本" />
+
+        <TextView
+            android:id="@+id/software_version"
+            style="@style/H16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp" />
+
+        <View
+            style="@style/Line4"
+            android:layout_marginTop="49dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/soft_layout" >
+
+        <TextView
+            style="@style/H19"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_remote_bt"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="硬件版本" />
+
+        <TextView
+            android:id="@+id/hardware_version"
+            style="@style/H16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp" />
+
+        <View
+            style="@style/Line4"
+            android:layout_marginTop="49dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hard_layout" >
+
+        <TextView
+            style="@style/H19"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_remote_bt"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="序列号" />
+
+        <TextView
+            android:id="@+id/serial_number"
+            style="@style/H16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp" />
+
+        <View
+            style="@style/Line4"
+            android:layout_marginTop="49dp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/actionbar_bottom"
+        layout="@layout/actioninfo_bottom" />
+
+</RelativeLayout>

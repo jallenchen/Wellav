@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="audiocodecs">
+        <item>ilbc</item>
+        <item>opus</item>
+    </string-array>
+    <string-array name="videocodecs">
+        <item>vp8</item>
+        <item>h264</item>
+    </string-array>
+    <string-array name="videoformat">
+        <item>标清</item>
+        <item>流畅</item>
+        <item>高清</item>
+    </string-array>
+    <string-array name="conftype">
+        <item>0:多人会话群聊</item>
+        <item>1:多人会话对讲</item>
+        <item>2:多人两方语音</item>
+        <item>3:微直播</item>
+    </string-array>
+    <string-array name="uetype">
+        <item>0:Device</item>
+        <item>1:Phone</item>
+        <item>2:Device2Phone</item>
+    </string-array>
+    <string-array name="functions">
+        <item>绑定海豚</item>
+        <item>添加成员</item>
+        <item>发起群聊</item>
+        <item>发起会议</item>
+        <item>添加外部设备(V1.2)</item>
+    </string-array>
+    <string-array name="takepic">
+        <item>拍照</item>
+        <item>从相册选取</item>
+    </string-array>
+    <string-array name="hotcity">
+        <item>""</item>
+        <item>上海</item>
+        <item>北京</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>武汉</item>
+        <item>天津</item>
+        <item>西安</item>
+        <item>南京</item>
+        <item>杭州</item>
+        <item>成都</item>
+        <item>重庆</item>
+    </string-array>
+    
+        <string-array name="pop_menu">
+        <item>新的联系人</item>
+        <item>发起群聊</item>
+        <item>快速反馈</item>
+        <item>让亲友下载</item>
+    </string-array>
+    
+     <string-array name="select_watch">
+        <item>禁止观看</item>
+        <item>允许观看</item>
+    </string-array>
+    
+    <string-array name="dolphon_setting">
+        <item>有人观看通知我</item>
+        <item>有人通话通知我</item>
+        <item>Ta看照片通知我</item>
+    </string-array>
+    
+    <!-- add  -->
+    <string-array name="albumType">
+        <item>生活</item>
+        <item>聊天</item>
+        <item>安全</item>
+    </string-array>
+    
+    <string-array name="picture">
+        <item>进入待机</item>
+        <item>待机模式</item>
+        <item>播放间隔</item>
+        <item>轮播持续时间</item>
+        <item>轮播哪些照片</item>
+        <item>时钟持续时间</item>
+    </string-array>
+
+    <string-array name="pictureAndVedio">
+        <item>照片</item>
+        <item>视频</item>
+    </string-array>
+    
+    <string-array name="duration_str">
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </string-array>
+    
+     <string-array name="photo_whichToPlay_str">
+        <item>我收藏的</item>
+        <item>最近（30张）</item>
+        <item>最近（50张）</item>
+        <item>最近（100张）</item>
+        <item>全部随机</item>
+    </string-array>
+    
+     <string-array name="playing_how_long_str">
+        <item>从不休屏</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </string-array>
+    
+     <string-array name="playing_interval_str">
+        <item>3秒</item>
+        <item>4秒</item>
+        <item>5秒</item>
+        <item>6秒</item>
+        <item>10秒</item>
+        <item>11秒</item>
+        <item>12秒</item>
+    </string-array>
+    
+   <string-array name="mode">
+        <item>时钟</item>
+        <item>轮播相册</item>
+        <item>直接休屏</item>
+    </string-array>
+    
+   <string-array name="language_str">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>河南话</item>
+    </string-array>
+    
+   <string-array name="language_system">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    
+    <string-array name="dolphin_">
+        <item>海豚</item>
+        <item>联系人</item>
+        <item>发现</item>
+        <item>我</item>
+    </string-array>
+     <string-array name="weekdays">
+        <item >@string/monday</item>
+        <item >@string/tuesday</item>
+        <item >@string/wednsday</item>
+        <item >@string/thursday</item>
+        <item >@string/friday</item>
+        <item >@string/saturday</item>
+        <item >@string/sunday</item>
+    </string-array>
+</resources>

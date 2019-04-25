@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wellav="http://schemas.android.com/apk/res/com.wellav.dolphin.mmedia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <FrameLayout
+        android:id="@+id/chatFrag_frameId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color103"
+        android:padding="5dp" >
+
+        <com.wellav.dolphin.mmedia.ui.AlbumTab
+            android:id="@+id/fragChat_tabId"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            wellav:itemBckgrdSrc="@drawable/shape_tabitem_bckgrd"
+            wellav:itemChkBckgrdSrc="@drawable/shape_tabitem_checked"
+            wellav:itemCount="2" >
+        </com.wellav.dolphin.mmedia.ui.AlbumTab>
+    </RelativeLayout>
+
+</LinearLayout>

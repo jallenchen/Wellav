@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <com.wellav.dolphin.ui.AnalogClock
+            android:id="@+id/analogClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/analogClock1"
+            style="@style/h10"
+            android:id="@+id/time_minute" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:layout_toRightOf="@id/analogClock1"
+            android:layout_below="@id/time_minute"
+            style="@style/h12"
+            android:id="@+id/today_weather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14px"
+            android:layout_toRightOf="@id/analogClock1"
+            android:layout_below="@id/today_weather"
+            style="@style/h3"
+            android:id="@+id/month_day" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:layout_toRightOf="@id/analogClock1"
+            android:layout_below="@id/month_day"
+            style="@style/h12"
+            android:id="@+id/big_month_day" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:layout_toRightOf="@id/analogClock1"
+            android:layout_below="@id/big_month_day"
+            style="@style/h3"
+            android:id="@+id/tomorrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:layout_toRightOf="@id/analogClock1"
+            style="@style/h12"
+            android:layout_below="@id/tomorrow"
+            android:id="@+id/tomorrow_weather" />
+    </RelativeLayout>
+
+</RelativeLayout>

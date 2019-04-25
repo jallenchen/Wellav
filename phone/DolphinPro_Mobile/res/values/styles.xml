@@ -1,0 +1,267 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <!-- <item name="android:windowExitAnimation">@anim/push_bottom_out</item> -->
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="NoTitle" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 字体样式 -->
+
+    <style name="H1">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="H2">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color102</item>
+    </style>
+
+    <style name="H3">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color105</item>
+    </style>
+
+    <style name="H4">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color102</item>
+    </style>
+
+    <style name="H5">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color104</item>
+    </style>
+
+    <style name="H6">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color3</item>
+    </style>
+
+    <style name="H7">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color3</item>
+    </style>
+
+    <style name="H8">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/color105</item>
+    </style>
+
+    <style name="H9">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/color1</item>
+    </style>
+
+    <style name="H10">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color1</item>
+    </style>
+
+    <style name="H11">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color105</item>
+    </style>
+
+    <style name="H12">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color1</item>
+    </style>
+
+    <style name="H13">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color104</item>
+    </style>
+
+    <style name="H14">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/color105</item>
+    </style>
+
+    <style name="H15">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/color102</item>
+    </style>
+
+    <style name="H16">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="H17">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color5</item>
+    </style>
+
+    <style name="H18">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color7</item>
+    </style>
+
+    <style name="H19">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/color8</item>
+    </style>
+
+
+    <style name="H20">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color105</item>
+    </style>
+
+    <!-- line 式样 -->
+    <style name="Line1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/color1</item>
+    </style>
+
+    <style name="Line2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/color104</item>
+    </style>
+
+    <style name="Line3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/color101</item>
+    </style>
+
+    <style name="Line4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/color8</item>
+    </style>
+
+    <style name="Line5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    
+        <style name="Line7">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:background">@color/color104</item>
+    </style>
+
+    <style name="TW_TT_EditText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/color102</item>
+        <item name="android:background">@drawable/feedbackframe</item>
+    </style>
+
+    <style name="TW_TT_EditText.MultiLine">
+        <item name="android:padding">9dp</item>
+        <item name="android:gravity">start</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    
+       <style name="dialog_title_text_style">
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:textColor">@color/color_activity_blue_bg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/dialog_text_margin_horizontal</item>
+        <item name="android:paddingRight">@dimen/dialog_text_margin_horizontal</item>
+        <item name="android:paddingTop">@dimen/dialog_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/dialog_padding_vertical</item>
+    </style>
+    
+           <style name="dialog_default_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    
+        <style name="dialog_message_text_style">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="android:textColor">@color/color_black_333333</item>
+        <item name="android:paddingLeft">@dimen/dialog_text_margin_horizontal</item>
+        <item name="android:paddingRight">@dimen/dialog_text_margin_horizontal</item>
+        <item name="android:paddingTop">@dimen/dialog_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/dialog_padding_vertical</item>
+    </style>
+        <style name="dialog_button_text_style">
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/nim_list_item_selector</item>
+        <item name="android:paddingTop">@dimen/custom_dialog_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/custom_dialog_padding_vertical</item>
+    </style>
+    
+         <!-- dialog style -->
+    <style name="easy_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 后面的activity变暗 -->
+    </style>
+    
+        <style name="horizontal_light_thin_divider">
+        <item name="android:layout_height">2px</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/split_line_grey_color_d9d9d9</item>
+    </style>
+    
+   <style name="list_view" parent="@android:style/Widget.ListView">
+        <item name="android:scrollbarThumbVertical">@drawable/nim_scrollbar_handle_holo_dark</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/nim_scrollbar_handle_holo_dark</item>
+    </style>
+
+</resources>

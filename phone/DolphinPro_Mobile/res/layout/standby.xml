@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/bg_remote">
+	
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+    
+  <ListView 
+  	    android:id="@+id/list_stangby1"
+  	    android:layout_below="@+id/actionbar"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="16dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@null"
+  	    android:dividerHeight="0dp"
+		android:scrollbars="none"/>
+  
+  
+   <ListView 
+       android:id="@+id/list_stangby2"
+        android:layout_below="@+id/list_stangby1"
+  	    android:layout_marginLeft="66dp"
+  	    android:layout_marginRight="16dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:divider="@null"
+  	    android:dividerHeight="0dp"
+		android:scrollbars="none"/>
+    
+    
+    <ListView 
+        android:id="@+id/list_stangby3"
+         android:layout_below="@+id/list_stangby2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+  	    android:layout_marginLeft="66dp"
+  	    android:layout_marginRight="16dp"
+  	    android:divider="@null"
+  	    android:dividerHeight="0dp"
+  	    android:scrollbars="none"/>
+    
+        <include
+        android:id="@+id/actionbar_bottom"
+        layout="@layout/actioninfo_bottom" />
+    </RelativeLayout>
+    

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/color101_80" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/h12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/add_member"
+        android:layout_marginTop="96px" />
+
+    <EditText
+        android:id="@+id/edit"
+        style="@style/h10"
+        android:layout_width="500px"
+        android:layout_height="wrap_content" 
+         android:layout_centerHorizontal="true"
+         android:gravity="center_horizontal"
+         android:layout_below="@+id/title"
+         android:background="@null"
+         android:singleLine="true"
+         android:maxLength="11"
+         android:hint="@string/input_num"
+         android:textColorHint="@color/white_50"
+         android:layout_marginTop="100px"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="500px"
+        android:layout_height="1px"
+        android:layout_below="@+id/edit"
+        android:layout_marginTop="2px"
+        android:background="@color/white" 
+         android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginTop="20px"
+         android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:background="@drawable/buttonred_shap"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/h3"
+            android:layout_width="180px"
+            android:layout_height="56px"
+            android:layout_marginLeft="96px"
+            android:layout_toRightOf="@+id/cancel"
+            android:background="@drawable/buttonblue_shap"
+            android:text="@string/confirm" />
+    </RelativeLayout>
+
+</RelativeLayout>

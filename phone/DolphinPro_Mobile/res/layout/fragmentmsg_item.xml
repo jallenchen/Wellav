@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    
+    <TextView 
+        android:id="@+id/msg_time"
+        android:layout_height="20dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/H16"
+        android:background="@color/color105"
+        android:layout_marginTop="8dp"
+        android:text="16:40"
+        
+        />
+    
+    <com.wellav.dolphin.mmedia.ui.CircleImageView 
+        android:id="@+id/msg_icon"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_defaulthead_home_40dp"
+        android:layout_below="@+id/msg_time"
+        android:layout_marginTop="8dp"
+          android:layout_marginLeft="16dp"
+        
+        />
+    <TextView 
+        android:id="@+id/msg_name"
+          android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/msg_icon"
+        android:layout_below="@+id/msg_time"
+       android:layout_marginLeft="8dp"
+       android:layout_marginTop="8dp"
+        style="@style/H4"
+        android:text="用户A"
+        />
+    
+    <TextView 
+        android:id="@+id/msg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxWidth="240dp"
+        android:layout_toRightOf="@+id/msg_icon"
+        android:layout_below="@+id/msg_name"
+        android:layout_marginTop="6dp"
+        style="@style/H10"
+        android:background="@drawable/msnframe"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<item android:state_enabled="true" ><shape>
+    
+    <corners android:radius="45.0dp" />
+    <!-- 圆角，你也可以对不同的角设置不同的数值 -->
+
+    <solid android:color="@color/color103_60" />
+    <!-- 按钮可按 -->
+</shape></item>
+
+</selector>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white">
+    
+    <include 
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2"/>
+
+    <TextView
+        style="@style/H10"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/actionbar"
+        android:text="@string/county_code" />
+
+    <EditText
+        android:id="@+id/cilent_phone"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/tv"
+        android:background="@null"
+        android:hint="@string/phone_num_hint"
+        android:maxLength="11"
+        android:inputType="number"
+        android:singleLine="true"/>
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Line3"
+        android:layout_below="@+id/cilent_phone"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/nextStep"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="98dp"
+        android:layout_below="@+id/view1"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/next_step"
+        style="@style/H1"/>
+    
+    <RelativeLayout 
+        android:id="@+id/note_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nextStep"
+        android:layout_centerHorizontal="true"
+        >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/next_prompt"
+        style="@style/H11" />
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="4dp"
+        android:text="@string/dolphin_note"
+         android:layout_centerHorizontal="true"
+        android:background="@drawable/note_bg_selector"
+        style="@style/H12"  />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96px"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back_bt_message"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="48px"
+            android:background="@drawable/back_btn_selector" />
+
+        <TextView
+            android:id="@+id/back_text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:layout_toRightOf="@+id/back_bt_message"
+            android:text="@string/message_box"
+            style="@style/h4" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="48px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/message_button_normal"
+                android:layout_width="200px"
+                android:layout_height="48px"
+                android:background="@color/but_color"
+                android:text="@string/normal"
+                style="@style/h2" />
+
+            <Button
+                android:id="@+id/message_button_safe"
+                android:layout_width="200px"
+                android:layout_height="48px"
+                android:layout_toRightOf="@+id/message_button_normal"
+                android:background="@color/half_but_color"
+                android:text="@string/safe"
+                android:textSize="28px"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/message_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="48px"
+        android:layout_marginRight="48px" >
+    </FrameLayout>
+
+</LinearLayout>

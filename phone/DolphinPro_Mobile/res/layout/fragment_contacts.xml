@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:clickable="true">
+    
+    
+   <LinearLayout 
+       android:id="@+id/new_contacts_layout"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:background="@drawable/new_contact_bg_selector"
+       android:clickable="true"
+       >
+      <ImageView 
+          android:id="@+id/new_contanct_icon"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:padding="4dp"
+          android:layout_marginLeft="16dp"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/ic_newcontacts"
+          
+          /> 
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="@style/H2"
+             android:layout_gravity="center_vertical"
+           android:layout_marginLeft="16dp"
+           android:text="@string/new_contacts"
+           
+           />
+       
+   </LinearLayout>
+   
+       <ExpandableListView 
+        android:id="@+id/el_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_contacts_layout"
+        android:cacheColorHint="#abcdefff"
+        android:clickable="true"
+        android:groupIndicator="@null"
+        android:smoothScrollbar="false"
+        android:background="@color/white"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        ></ExpandableListView>
+   
+</RelativeLayout>

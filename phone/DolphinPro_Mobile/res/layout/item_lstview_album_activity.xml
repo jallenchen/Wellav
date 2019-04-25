@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/selector_listitem"
+    android:gravity="center_vertical" >
+
+    <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/item_lstview_albumActivity_ImgId"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/defaulthead_home_40dp" />
+
+    <TextView
+        android:id="@+id/item_lstview_albumActivity_TxtId"
+        style="@style/H2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/item_lstview_albumActivity_ImgId"
+        android:gravity="center_vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:gravity="center_vertical"
+        android:src="@drawable/type_dolphin" />
+
+    <View
+        style="@style/Line2"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

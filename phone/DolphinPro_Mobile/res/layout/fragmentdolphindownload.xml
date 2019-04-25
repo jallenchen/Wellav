@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:clickable="true">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/ic_wetchat"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_wechat_56dp" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_wetchat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="微信" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/ic_moments"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_moments_56dp" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_moments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="朋友圈" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp" >
+
+        <ImageView
+            android:id="@+id/ic_msg"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_msn_56dp" />
+
+        <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="短信" />
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/qr_code"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/qr_code_160dp"
+        
+        />
+    
+       <TextView
+            style="@style/H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qr_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="扫描二维码，下载海豚应用" />
+
+</RelativeLayout>

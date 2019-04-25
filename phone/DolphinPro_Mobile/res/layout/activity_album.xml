@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wellav="http://schemas.android.com/apk/res/com.wellav.dolphin.mmedia"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color102"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <ImageView
+            android:id="@+id/albumActivity_btnBackwardId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_white" />
+		<View android:layout_width="1dp"
+		    android:layout_height="40dp"
+		    android:background="@color/color101"/>
+        <TextView
+            style="@style/H1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/album" />
+        <Button android:layout_width="80dp"
+            android:layout_height="30dp"          
+            android:drawableLeft="@drawable/ic_like_white_18dp"
+            android:text="收藏"
+            style="@style/H1"
+            android:paddingLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/albumActivity_FavorBtnId"
+            android:background="@drawable/buttonblue_shap"/>
+    </LinearLayout>
+
+    <com.wellav.dolphin.mmedia.ui.AlbumTab
+        android:id="@+id/albumActivity_tabId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        wellav:itemBckgrdSrc="@drawable/shape_tabitem_bckgrd"
+        wellav:itemChkBckgrdSrc="@drawable/shape_tabitem_checked"
+        wellav:itemCount="3" >
+    </com.wellav.dolphin.mmedia.ui.AlbumTab>
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/color1t"/>
+    <FrameLayout
+        android:id="@+id/albumActivity_contentId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

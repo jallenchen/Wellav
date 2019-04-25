@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/discoveryFrag_btnShareId"
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_listitem"
+        android:drawableLeft="@drawable/ic_moment"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/this_time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/discoveryFrag_btnAlbumId"
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_listitem"
+            android:drawableLeft="@drawable/ic_album"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/look_home_alumb" />
+
+        <View style="@style/Line2" />
+
+        <Button
+            android:id="@+id/discoveryFrag_btn_assistan"
+            style="@style/H2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_listitem"
+            android:drawableLeft="@drawable/ic_securityassistant"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/look_home" />
+    </LinearLayout>
+
+    <Button
+        style="@style/H2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_listitem"
+        android:drawableLeft="@drawable/ic_showphotos"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:text="@string/move_state" />
+
+</LinearLayout>

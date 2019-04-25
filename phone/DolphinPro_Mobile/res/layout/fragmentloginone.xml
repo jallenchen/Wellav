@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:clickable="true">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <TextView
+        android:id="@+id/code"
+        style="@style/H10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/county_code" />
+
+    <EditText
+        android:id="@+id/cilent_phone"
+        style="@style/H3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:hint="@string/phone_num_hint"
+        android:singleLine="true"
+        android:text="" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/Line3"
+        android:layout_below="@+id/cilent_phone"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/cilent_psw"
+        style="@style/H3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        android:singleLine="true" 
+        android:password="true"
+        android:hint="@string/psw_hint" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/Line3"
+        android:layout_below="@+id/cilent_psw"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/login"
+        style="@style/H1"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="98dp"
+        android:background="@drawable/buttonblue_shap"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/forget_pwd"
+        style="@style/H10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/restsend_selector"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="@string/psw_forget" />
+
+</RelativeLayout>

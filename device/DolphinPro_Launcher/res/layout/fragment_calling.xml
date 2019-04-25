@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/calling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <!-- 视频通话布局 -->
+
+        <RelativeLayout
+            android:id="@+id/calling_layout_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/calling_layout_video_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:background="#efeffe" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calling_layout_video_our"
+                android:layout_width="320px"
+                android:layout_height="200px"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="16px"
+                android:layout_marginLeft="16px"
+                android:padding="1px"
+                android:background="@drawable/chat_localview_frame" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calling_layout_multivideo_our"
+                android:layout_width="1px"
+                android:layout_height="1px"
+                android:layout_centerInParent="true"
+                android:background="@color/black" >
+            </RelativeLayout>
+            
+             <TextView
+            android:id="@+id/calling_layout_netstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/calling_layout_video_our"
+            android:text="网络不稳定"
+            android:textColor="#ff0000"
+            android:visibility="visible" />
+            <!-- by cpl -->
+
+            <RelativeLayout
+                android:id="@+id/Chronometer_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible"
+                android:layout_marginLeft="32px"
+                android:layout_marginTop="32px" >
+
+                <ImageView
+                    android:id="@+id/repxoint"
+                    android:layout_width="28px"
+                    android:layout_height="28px"
+                    android:layout_marginRight="16px"
+                    android:layout_marginTop="6px"
+                    android:src="@drawable/chat_record_redpoint" />
+
+                <Chronometer
+                    android:id="@+id/chronometer_video"
+                    style="@style/h3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/repxoint"
+                    android:text="00:00" />
+            </RelativeLayout>
+            
+            
+            
+       <RelativeLayout
+            android:id="@+id/video_dir_layout"
+            android:layout_width="360dip"
+            android:layout_height="96dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="160px"
+            android:layout_marginRight="160px"
+            android:background="@drawable/chat_arrow_bg"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/video_left"
+                android:layout_width="128px"
+                android:layout_height="96px"
+                android:layout_marginRight="100px"
+                android:background="@drawable/btn_arr_left" />
+
+            <ImageButton
+                android:id="@+id/video_right"
+                android:layout_width="128px"
+                android:layout_height="96px"
+                android:layout_toRightOf="@+id/video_left"
+                android:background="@drawable/btn_arr_right" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_gesture_volume_rl"
+                android:layout_width="240dip"
+                android:layout_height="200dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/video_gesture__volume_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/video_geture_volume_percentage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/video_gesture__volume_iv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="right"
+                    android:textColor="#ffececec" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_gesture_bright_rl"
+                android:layout_width="240dip"
+                android:layout_height="200dip"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/video_gesture__bright_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/video_geture_bright_percentage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/video_gesture__bright_iv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="right"
+                    android:textColor="#ffececec" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--  -->
+
+        <RelativeLayout
+            android:id="@+id/calling_layout_video_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="32px" >
+
+            <com.wellav.dolphin.ui.ImageButtonText
+                android:id="@+id/btn_calling_video_capture"
+                style="@style/h8"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_marginRight="16px"
+                android:layout_toLeftOf="@+id/btn_call_record"
+                android:onClick="onCaptureWnd"
+                android:src="@drawable/capture_btn_selector"
+                android:text="@string/screen_shot" />
+
+            <com.wellav.dolphin.ui.ImageButtonText
+                android:id="@+id/btn_call_record"
+                style="@style/h8"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_marginRight="8px"
+                android:layout_toLeftOf="@+id/conf_members_add_img"
+                android:src="@drawable/record_btn_selector"
+                android:text="@string/make_vedio" />
+
+            <com.wellav.dolphin.ui.ImageButtonText
+                android:id="@+id/conf_members_add_img"
+                style="@style/h8"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_marginRight="16px"
+                android:layout_toLeftOf="@+id/calling_img_audio_mute"
+                android:onClick="onAddMember"
+                android:src="@drawable/group_btn_selector"
+                android:text="@string/group_chat" />
+
+            <com.wellav.dolphin.ui.ImageButtonText
+                android:id="@+id/calling_img_audio_mute"
+                style="@style/h8"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_marginRight="16px"
+                android:layout_toLeftOf="@+id/calling_video_hangup"
+                android:onClick="onMute"
+                android:src="@drawable/micr_btn_selector"
+                android:text="@string/no_sound" />
+
+            <com.wellav.dolphin.ui.ImageButtonText
+                android:id="@+id/calling_video_hangup"
+                style="@style/h7"
+                android:layout_width="112px"
+                android:layout_height="112px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16px"
+                android:onClick="onHangUp"
+                android:src="@drawable/hangup_btn_selector"
+                android:text="@string/hang_out" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

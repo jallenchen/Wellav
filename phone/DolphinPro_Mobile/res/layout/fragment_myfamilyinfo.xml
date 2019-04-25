@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106"
+    android:clickable="true"
+    android:scrollbars="none" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/info_title"
+            layout="@layout/infomation_title" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_title"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_place"
+                    style="@style/H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/info_place" />
+
+                <TextView
+                    android:id="@+id/info_city"
+                    style="@style/H3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/setting_note" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                style="@style/Line2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_item2"
+                    style="@style/H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/info_contact" />
+
+                <TextView
+                    android:id="@+id/info_item2_content"
+                    style="@style/H3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="16dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                style="@style/Line2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/info_modifynickname"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/restsend_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="@string/info_modify_nickname" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/Line2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:id="@+id/info_modifyhead"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/restsend_selector"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="@string/info_modify_head" />
+
+            <View
+                android:id="@+id/view4"
+                style="@style/Line2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/info_privacy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="0dp"
+                    android:text="@string/privacy_mode" />
+
+                <ToggleButton
+                    android:id="@+id/info_switch"
+                    android:layout_width="65dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_switch"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/info_turn_over"
+            style="@style/H1"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonred_shap"
+            android:text="移交" />
+
+        <Button
+            android:id="@+id/info_dissolve"
+            style="@style/H1"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/ll"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/buttonred_shap"
+            android:text="解散该群" />
+    </RelativeLayout>
+
+</ScrollView>

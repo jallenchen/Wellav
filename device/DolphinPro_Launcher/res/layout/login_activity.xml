@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:background="@drawable/defaulthead_dolphin_48dp"
+            android:contentDescription="" />
+
+        <LinearLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical" >
+
+            <com.wellav.dolphin.netease.config.ClearableEditTextWithIcon
+                android:id="@+id/edit_login_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white_normal"
+                android:drawablePadding="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <com.wellav.dolphin.netease.config.ClearableEditTextWithIcon
+                android:id="@+id/edit_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white_normal"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/g_white_btn_selector"
+                android:text="登陆"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_login_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="20dip"
+            android:text="注册"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

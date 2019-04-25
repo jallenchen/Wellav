@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/watch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color101" >
+        
+         <RelativeLayout
+        android:id="@+id/watch_our"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/black" />
+
+        <ImageView
+            android:id="@+id/id_child_ref_img"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp"
+            android:background="@drawable/ic_refresh" />
+
+        <TextView
+            android:id="@+id/id_child_txt"
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_child_ref_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="点击观看" />
+        <ImageView 
+            android:id="@+id/id_child_close"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/watchclose_btn_selector"
+            android:visibility="gone"
+            />
+           <ImageView
+               android:id="@+id/id_child_fullscreen" 
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/fullscreen_btn_selector"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@+id/watch_layout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" >
+
+        <ImageView
+            android:id="@+id/id_child_chat_img"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="74dp"
+            android:background="@drawable/tab1_chat_selector" />
+
+        <TextView
+            android:id="@+id/id_child_txt1"
+            style="@style/H4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/id_child_chat_img"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="4dp"
+            android:text="通话" />
+
+        <ImageView
+            android:id="@+id/id_child_push_photo_img"
+            android:layout_width="42dip"
+            android:layout_height="32dip"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/tab1_pushphoto_selector" />
+
+        <TextView
+            android:id="@+id/id_child_txt2"
+            style="@style/H6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_child_push_photo_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:text="推照片" />
+
+        <ImageView
+            android:id="@+id/id_child_setting_img"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="74dp"
+            android:background="@drawable/tab1_setting_selector" />
+
+        <TextView
+            android:id="@+id/id_child_txt3"
+            style="@style/H4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_child_setting_img"
+            android:layout_marginRight="74dp"
+            android:layout_marginTop="4dp"
+            android:text="设置" />
+    </RelativeLayout>
+
+</RelativeLayout>

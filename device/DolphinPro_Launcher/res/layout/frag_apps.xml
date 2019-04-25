@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@drawable/bg">
+    <include 
+        layout="@layout/actionbar_custom"
+        />
+    
+    <android.support.v7.widget.RecyclerView 
+    android:id="@+id/appsFrag_rvId"
+    android:layout_width="match_parent"
+    android:layout_height="400px"
+    android:layout_centerInParent="true" 
+    android:paddingLeft="50px"
+    android:paddingRight="50px"/>
+    
+    <TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      style="@style/h6"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="16px"
+      android:layout_marginBottom="16px"
+      android:text="@string/phone_net"  
+        
+        />
+</RelativeLayout>
+

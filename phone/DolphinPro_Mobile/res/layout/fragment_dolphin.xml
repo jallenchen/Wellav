@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:clickable="true">
+    
+    <ExpandableListView 
+        android:id="@+id/el_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#abcdefff"
+        android:clickable="true"
+        android:groupIndicator="@null"
+        android:smoothScrollbar="false"
+        android:background="@color/white"
+        android:dividerHeight="1dp"
+        ></ExpandableListView>
+<!--
+    <com.wellav.ui.MyExplandableListView
+        android:id="@+id/el_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msg_layout"
+        android:cacheColorHint="#abcdefff"
+        android:listSelector="@color/color6"
+        android:clickable="true"
+         >
+
+        
+             android:cacheColorHint="#00000000"，这个设置拖动view时背景色  
+        android:listSelector="#00000000" ，设置选中时的底色
+       
+    </com.wellav.ui.MyExplandableListView>
+    
+<RelativeLayout
+            android:id="@+id/other"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#efeffe" >
+        </RelativeLayout>
+           <RelativeLayout
+            android:id="@+id/our"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:background="@color/black" >
+        </RelativeLayout>
+         -->
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color106"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/actionbar_custom2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/myhead"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dp"
+                android:text="@string/headicon" />
+
+            <com.wellav.dolphin.mmedia.ui.CircleImageView
+                android:id="@+id/myinfo_headicon"
+                android:layout_width="48.0dp"
+                android:layout_height="48.0dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/login_head" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view5"
+            style="@style/Line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/myinfo_bt_nickname"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dp"
+                android:text="@string/nick_name" />
+
+            <TextView
+                android:id="@+id/myinfo_nickname"
+                style="@style/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="橘子花" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/myinfo_bt_sex"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_listitem"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dp"
+                android:text="@string/sex" />
+
+            <TextView
+                android:id="@+id/myinfo_sex"
+                style="@style/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:text="女" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view6"
+            style="@style/Line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/myinfo_bt_age"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/selector_listitem"
+                android:clickable="false"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dp"
+                android:text="@string/age" />
+
+            <TextView
+                android:id="@+id/myinfo_age"
+                style="@style/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view7"
+            style="@style/Line2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/mycity"
+                style="@style/H2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/selector_listitem"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="18dp"
+                android:text="@string/location" />
+
+            <TextView
+                android:id="@+id/myinfo_city"
+                style="@style/H3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="广东 惠州" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

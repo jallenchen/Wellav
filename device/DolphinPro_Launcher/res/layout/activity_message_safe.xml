@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_message_safe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/white"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <Button
+        android:id="@+id/but_clear_safe"
+        android:layout_width="120px"
+        android:layout_height="48px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80px"
+        android:layout_marginRight="32px"
+        android:background="@drawable/message_delete_select"
+        android:onClick="onClearSafeMsg"
+        android:text="@string/clear_all"
+        style="@style/h3" />
+
+</RelativeLayout>

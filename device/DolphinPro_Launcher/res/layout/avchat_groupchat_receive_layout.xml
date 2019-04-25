@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/bg">
+
+    <com.wellav.dolphin.ui.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="220px"
+        android:layout_height="220px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60px"
+        android:src="@drawable/defaulthead_dolphin_90dp" />
+
+    <ImageView
+        android:id="@+id/type"
+        android:layout_width="28px"
+        android:layout_height="28px"
+        android:layout_below="@+id/icon"
+        android:layout_marginRight="8px"
+        android:layout_marginTop="20px"
+        android:layout_toLeftOf="@+id/name"
+        android:src="@drawable/type_phone_white" />
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20px"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/txt"
+        style="@style/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56px"
+        android:ellipsize="marquee"
+        android:text="@string/invitegroup" />
+
+    <RelativeLayout
+        android:id="@+id/accept_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" >
+
+        <com.wellav.dolphin.ui.ImageButtonText
+            android:id="@+id/hangup_acc"
+            style="@style/h8"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_marginTop="52px"
+            android:src="@drawable/hangup_btn_selector"
+            android:onClick="onReceviceHangup"
+            android:text="@string/hangup" />
+
+        <com.wellav.dolphin.ui.ImageButtonText
+            android:id="@+id/accept_acc"
+            style="@style/h8"
+            android:layout_width="112px"
+            android:layout_height="112px"
+            android:layout_marginLeft="160px"
+            android:layout_marginTop="52px"
+            android:layout_toRightOf="@+id/hangup_acc"
+            android:src="@drawable/accept_btn_selector"
+            android:onClick="onReceviceAccept"
+            android:text="@string/accept" />
+    </RelativeLayout>
+
+</RelativeLayout>

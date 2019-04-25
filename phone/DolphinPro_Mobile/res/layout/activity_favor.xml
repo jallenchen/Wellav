@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color102"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/favorActivity_backwdBtnId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/arrow_l_white" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/favorActivity_backwdBtnId"
+            android:background="@color/color101" />
+
+        <TextView
+            style="@style/H1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/favorActivity_backwdBtnId"
+            android:text="我收藏的" />
+
+        <com.wellav.dolphin.mmedia.ui.AlertButton
+            android:id="@+id/favorActivity_DelBtnId"
+            style="@style/H1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonred_shap"
+            android:text="移除" />
+    </RelativeLayout>
+
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView
+        android:id="@+id/favorActivity_gvId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionBar"
+        android:columnWidth="120dip"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="5dp" />
+
+    <ProgressBar
+        android:id="@+id/favorActivity_pbId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@anim/running_rotate"
+        android:indeterminateDuration="1000" />
+
+</RelativeLayout>

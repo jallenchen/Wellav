@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string-array name="moreListTxt">
+        <item>绑定海豚</item>
+        <item>添加成员</item>
+        <item>发起群聊</item>
+        <item>发起会议</item>
+    </string-array>
+    
+     <string-array name="duration_str">
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </string-array>
+    
+     <string-array name="photo_whichToPlay_str">
+        <item>我收藏的</item>
+        <item>最近（30张）</item>
+        <item>最近（50张）</item>
+        <item>最近（100张）</item>
+        <item>全部随机</item>
+    </string-array>
+    
+     <string-array name="playing_how_long_str">
+        <item>从不休屏</item>
+        <item>30秒</item>
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </string-array>
+    
+     <string-array name="playing_interval_str">
+        <item>3秒</item>
+        <item>4秒</item>
+        <item>5秒</item>
+        <item>6秒</item>
+        <item>10秒</item>
+        <item>11秒</item>
+        <item>12秒</item>
+    </string-array>
+    
+   <string-array name="mode">
+        <item>时钟</item>
+        <item>轮播相册</item>
+        <item>直接休屏</item>
+    </string-array>
+    
+   <string-array name="language_str">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>客家话</item>
+        <item>闽南语</item>
+    </string-array>
+    
+   <string-array name="language_system">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    
+   <string-array name="china_num">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+        <item>十</item>
+        <item>十一</item>
+        <item>十二</item>
+    </string-array>
+    
+   <string-array name="china_num1">
+        <item>初</item>
+        <item>十</item>
+        <item>廿</item>
+        <item>卅</item>
+    </string-array>
+</resources>

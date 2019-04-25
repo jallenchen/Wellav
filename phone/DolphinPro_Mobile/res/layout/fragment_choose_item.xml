@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp" 
+    android:background="@drawable/text_press_selector">
+    
+   <com.wellav.dolphin.mmedia.ui.CircleImageView
+        android:id="@+id/device_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+         android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView 
+         android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/H2"
+        android:layout_marginLeft="16dp"
+        android:text="万绍伟"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/device_icon"
+        />
+    
+      
+        <ImageView 
+             android:id="@+id/device_type"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_type_dolphin"
+        />
+             <View
+            android:id="@+id/view2"
+            style="@style/Line2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+</RelativeLayout>
